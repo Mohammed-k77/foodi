@@ -155,7 +155,7 @@ header .hero{
     position: absolute;
     border-radius: 50%;
     height: 80%;
-    top: 68px;
+    top: 57px;
     left: 9%;
     z-index: -1;
     width: 91%;
@@ -254,7 +254,7 @@ header .hero{
     position: absolute;
     width: 95%;
     left: 8px;
-    bottom: -10px;
+    bottom: -5px;
 }
 
 .hero .discription h1{
@@ -403,18 +403,17 @@ margin: 5px 0;
 
 .next-previous{
     display: flex;
-    right: 13%;
+    right: 0%;      
+    grid-gap: 2em;
     top: 22%;
     position: absolute;
-    align-items: flex-end;
-    width: 50px;
+    justify-content: space-between;
 }
 
 .special-dishes .left-link ,
 .special-dishes .right-link{
     padding: 22px;
     font-size: 20px;
-    margin: 0 20px;
     float: right;
     border-radius: 50%;
     background-color: #efefef;
@@ -430,14 +429,14 @@ margin: 5px 0;
 .meals-slider{
     display: flex;
     overflow: hidden;
-    padding: 15px;
-    width: 71%;
-    margin: 4% 15%;
+    padding: 15px 5px;
+    grid-gap: 2em;
+    margin: 4% 0;
 }
 
 .meals-slider .inner{
     display: flex;
-    justify-content: center;
+    grid-gap: 2em;
     list-style: none;
     transition: all 1s ease-in-out;
 }
@@ -445,8 +444,8 @@ margin: 5px 0;
 .meals-slider .inner .slide{
     position: relative;
     font-weight: bold;
-    width: 24%;
-    margin: 0 13px;
+    width: 376px;
+    height: 410px;
     padding: 25px 25px 10px 25px;
     border-radius: 15px;
     background-color: white;
@@ -463,7 +462,7 @@ margin: 5px 0;
 }
 
 .meals-slider .inner .slide img{
-    width: 85%;
+    width: 75%;
     margin: 25px auto;
 }
 
@@ -524,12 +523,12 @@ margin: 5px 0;
 .testimonials .chef-photo .smile-face{
     transform: rotate(-20deg);
     left: 5%;
-    top: 55%;
+    top: 60%;
 }
 
 .testimonials .chef-photo .pizza{
     transform: rotate(70deg);
-    right: -2%;
+    right: -3%;
     top: 65%;
 }
 
@@ -538,7 +537,7 @@ margin: 5px 0;
     padding: 15px 20px;
     font-weight: bold;
     right: 10%;
-    bottom: 18%;
+    bottom: 4%;
     background-color: white;
     border-radius: 15px;
     box-shadow: 0px 0px 12px #0055;
@@ -564,21 +563,28 @@ margin: 5px 0;
     content: "";
     position: absolute;
     border-radius: 50% 50% 20% 20%;
-    height: 57vh;
-    top: 32%;
+    height: 51%;
+    top: 39%;
     left: 9%;
     z-index: -1;
     width: 91%;
     background-color: var(--primary-color);
 }
 
-.testimonials .chef-photo img{
-    width: 90%;
-    height: 80%;
+.img-continer{
+    width: 80%;
+    height: 90%;
+}
+
+.testimonials .chef-photo .img-continer img{
+    width: 100%;
+    height: 100%;
 }
 
 .testimonials .customer-say > p{
     color: red;
+    font-weight: bold;
+    letter-spacing: 5px;
     text-transform: uppercase;
     font-size: 20px;
     text-align: left;
@@ -665,35 +671,38 @@ margin: 5px 0;
 
 .story-services{
     display: flex;
-    margin: 4%;
+    grid-gap: 2em;
+    margin: 5% 0;
 }
 
 .story-services .services {
     width: 50%;
+    padding: 1% 1% 0 0;
 }
 
 .story-services .services > p{
     text-transform: uppercase;
     color: red;
-    padding: 3%;
+    letter-spacing: 5px;
+    font-weight: bold;
     width: 50%;
     font-size: 15px;
     margin: 0 0 20px 0;
 }
 
 .story-services .services > h1{
-    font-size: 40px;
+    font-size: 50px;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     color: black;
     margin: 25px 0 35px 0;
 }
 
 .story-services .services > small{
-    color:var(--secondry-font-color);
-    font-weight: bold;
+    color: var(--secondry-font-color);
+    font-weight: 400;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    font-size: 15px;
-    margin: 15px 0 25px 0;
+    font-size: 25px;
+    margin: 15px 0 45px 0;
     display: block;
 }
 
@@ -712,12 +721,13 @@ margin: 5px 0;
 .boxes{
     width: 50%;
     display: flex;
+    justify-content: space-between;
     flex-wrap: wrap;
+    grid-gap: 1em;
 }
 
 .boxes .box{
     padding: 15px;
-    margin: 15px;
     border-radius: 20px;
     height: 32vh;
     width: 45%;
@@ -753,7 +763,7 @@ margin: 5px 0;
 /* Start Footer */
 
 footer{
-    padding: 0 12% 0 5%;
+    margin: 5% 0;
     font-weight: bold;
 }
 .footer-continer{
@@ -762,7 +772,6 @@ footer{
 }
 
 .footer-continer .footer-brand{
-    padding: 0 20px;
     width: 17%;
 }
 
@@ -803,7 +812,7 @@ footer{
 } 
 
 .copy-right ul li{
-    margin: 0 15px;
+    margin: 0 15px 0 0;
 } 
 
 .copy-right .social-icon{
@@ -824,10 +833,11 @@ footer{
 }
 
 .copy-right p{
-    text-align: center;
+    text-align: left;
     font-size: 12px;
     font-size: 1em;
-    margin: 16px;
+    margin: 20px;
+    padding: 0 0 0 70px;
     width: -webkit-fill-available;
     color: var(--secondry-font-color);
 }

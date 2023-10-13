@@ -35,7 +35,7 @@
     <!-- Main css file -->
 
     <link href="./assets/css/main.css" rel="stylesheet">
-    
+    <script src="./assets/js/main.js"></script>
 </head>
 <body>
     <div class="continer">
@@ -279,7 +279,9 @@ From Our Menu</pre></h1>
                     <div class="chef-photo">
                         <p class="smile-face">😊</p>
                         <p class="pizza">🍕</p>
-                        <img src="./assets/images/pngwing 2.png" alt="Loadding">
+                        <div class="img-continer">
+                            <img src="./assets/images/pngwing 2.png" alt="Loadding">
+                        </div>
                         <p class="descripe">Our Beast Chef 😁</p>
                     </div>
                     <div class="customer-say">
@@ -386,24 +388,5 @@ From Our Menu</pre></h1>
             </div>
         </footer>
     </div>
-    <script>
-
-        function nextSlide(){
-            debugger
-            let slides =document.getElementsByClassName('slide');
-
-            let amount = 100/slides.length;
-
-            document.getElementsByClassName('inner')[0].style.transform=`translateX(${-amount}%)`;
-        }
-
-        function previousSlide(){
-            let slides =document.getElementsByClassName('slide');
-
-            let amount = 100/slides.length;
-
-            document.getElementsByClassName('inner')[0].style.transform=`translateX(${amount}%)`;
-        }
-    </script>
 </body>
 </html>
